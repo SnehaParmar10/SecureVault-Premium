@@ -1,0 +1,91 @@
+:root {
+    --bg-sec: #0d001a;
+    --accent-sec: #bc13fe;
+    --text-sec: #e0e0e0;
+    --danger-sec: #ff0055;
+}
+
+body {
+    background-color: var(--bg-sec);
+    color: var(--text-sec);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.vault-container {
+    background: rgba(188, 19, 254, 0.05);
+    border: 1px solid rgba(188, 19, 254, 0.2);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    width: 500px;
+    box-shadow: 0 0 50px rgba(188, 19, 254, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: var(--accent-sec);
+    margin-bottom: 30px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+textarea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    resize: none;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-encrypt {
+    background: var(--accent-sec);
+    color: white;
+}
+
+.btn-decrypt {
+    background: transparent;
+    border: 1px solid var(--accent-sec);
+    color: var(--accent-sec);
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px var(--accent-sec);
+}
+
+.key-input {
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid var(--accent-sec);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    outline: none;
+}
