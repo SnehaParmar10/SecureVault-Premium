@@ -1,4 +1,4 @@
-# 🔒 SecureVault | Cryptographic Utility
+1.# 🔒 SecureVault | Cryptographic Utility
 
 A futuristic encryption/decryption interface designed for secure data handling and privacy concepts.
 
